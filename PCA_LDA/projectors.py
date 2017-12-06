@@ -1,27 +1,4 @@
 import numpy as np
-def extractPCA(data, In = 0.85):
-    inv = False
-    if (data.shape[0] > data.shape[1]):
-        inv = True
-        data = data.T
-    c = np.cov(data)
-    eigvals, eigvect = np.linalg.eig(c)
-    eigvals = eigvals.real
-    ind = np.argsort(eigvals)
-    ind = ind[::-1]
-    eigvals = eigvals[ind]
-    eigvect = eigvect[:,ind]
-    cumEigvals = np.cumsum(eigvals) / np.sum(eigvals)
-    idx = np.where(cumEigvals > In)[0]
-    V = []
-    if (In < 1):
-      V = eigvect[:,:idx[0]]
-    else:
-      V = eigvect[:,:In]
-    pca_data = V.T.dot(data)
-    if(inv):
-        return pca_data.T
-    return pca_data
 def extractPCAEIGV(data, In = 0.85):
     inv = False
     if (data.shape[0] > data.shape[1]):
