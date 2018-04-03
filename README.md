@@ -1,17 +1,18 @@
 # Machine Learning Algorithms
 This project is about re-implementing some Machine Learning Algorithms and dimensionality reduction
 Classifiers : 
--Bayesian Classifiers
--Expectation Maximisation 
--Gaussian Mixture Models
--Decision Tree
--Support vector Machine
+
+* Bayesian Classifiers
+* Decision Tree
+* Expectation Maximisation 
+* Gaussian Mixture Models
+* Support vector Machine
 
 Dimensionality reduction:
--PCA
--LDA
--KernelPCA
--KerbelLDA
+* PCA
+* LDA
+* kernel PCA comparaison with scikitLearn
+
 
 ## Classifiers (supervised Learning)
 -We tend to recognize handwritten digits using classifiers in Minst Database
@@ -20,12 +21,11 @@ Dimensionality reduction:
 
 ## Bayesian Classifiers
 -Go to the folder Classifiers and execute 'python performance.py'
-
+## Decision Tree 
+-open the notebook 
 ### Environement Requirement for other test 
 -(sudo) pip3 install jupyter
-## Others Classifiers
--Go to the folder Classifiers and tap the command "jupyter notebook"
--open the [classifier].ipynb, exec cells
+
 ## Reduction Dimensionality test 
 -Go to the folder reduction, tap the command "jupyter notebook"
 -open [reduction].ipynb
